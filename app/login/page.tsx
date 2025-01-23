@@ -50,7 +50,19 @@ const SignIn: React.FC = () => {
       const parsedData = JSON.parse(storedData);
 
       if (parsedData.email === email && parsedData.password === password) {
-        toast.success("Successfully signed in!");
+          toast.success('Successfully signed in!', {
+                position: 'top-center',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'light',
+              })
+              setTimeout(() => {
+                window.location.href = "/"; // Redirect to home page
+              }, 2000);
         sessionStorage.setItem("isLogin", "true"); // Set session storage
 
         setTimeout(() => {
