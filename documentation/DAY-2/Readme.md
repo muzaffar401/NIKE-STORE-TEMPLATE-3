@@ -1,10 +1,10 @@
 # Project Overview
 
-**AccessoryHub** is a modern and responsive e-commerce platform designed for all product accessories, offering a specialized marketplace for tech gadgets, fashion, appliances, and more. Built with innovative technologies, this platform ensures a seamless shopping experience for accessory enthusiasts.
+**NikeStore** is a modern and responsive e-commerce platform designed for all Nike products, offering a specialized marketplace for sportswear, footwear, accessories, and more. Built with innovative technologies, this platform ensures a seamless shopping experience for Nike enthusiasts.
 
 The project leverages **Sanity CMS** for efficient content management and **Next.js** for a dynamic and scalable frontend, ensuring smooth interaction between backend systems and the user interface. Key features include real-time updates, intuitive search and navigation, and secure payment and shipment tracking integrations.
 
-The vision for **AccessoryHub** is to become the go-to marketplace for all accessories, combining cutting-edge technology with a user-friendly design. This project highlights scalability, efficiency, and an accessory-first approach, providing a unique and comprehensive shopping experience. 🚀
+The vision for **NikeStore** is to become the go-to marketplace for all Nike products, combining cutting-edge technology with a user-friendly design. This project highlights scalability, efficiency, and a Nike-first approach, providing a unique and comprehensive shopping experience. 🚀
 
 ## Day 2: Planning the Technical Foundation
 
@@ -71,49 +71,49 @@ Here are the main API endpoints we'll be working with:
 
 **Success Response:**
 - **Code:** 201 Created  
-    **Content:**
-    ```json
-    {
-            "id": "12345",
-            "productId": "67890",
-            "content": "Great product!",
-            "rating": 5,
-            "createdAt": "2023-10-01T12:34:56Z"
-    }
-    ```
+        **Content:**
+        ```json
+        {
+                        "id": "12345",
+                        "productId": "67890",
+                        "content": "Great product!",
+                        "rating": 5,
+                        "createdAt": "2023-10-01T12:34:56Z"
+        }
+        ```
 
 **Error Response:**
 - **Code:** 400 Bad Request  
-    **Content:**
-    ```json
-    {
-            "errorMessage": "Invalid product ID"
-    }
-    ```
+        **Content:**
+        ```json
+        {
+                        "errorMessage": "Invalid product ID"
+        }
+        ```
 
 **Example Request:**
 ```json
 {
-        "content": "Great product!",
-        "rating": 5
+                "content": "Great product!",
+                "rating": 5
 }
 ```
 
 **Example Success Response:**
 ```json
 {
-        "id": "12345",
-        "productId": "67890",
-        "content": "Great product!",
-        "rating": 5,
-        "createdAt": "2023-10-01T12:34:56Z"
+                "id": "12345",
+                "productId": "67890",
+                "content": "Great product!",
+                "rating": 5,
+                "createdAt": "2023-10-01T12:34:56Z"
 }
 ```
 
 **Example Error Response:**
 ```json
 {
-        "errorMessage": "Invalid product ID"
+                "errorMessage": "Invalid product ID"
 }
 ```
 
